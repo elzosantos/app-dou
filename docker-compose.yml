@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000" # API
+      - "8501:8501" # Streamlit
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    volumes:
+      - .:/app
+      # O volume mapeia a pasta atual para dentro do contêiner, 
+      # garantindo que o banco e os cartões fiquem salvos no seu host.
+    command: sh -c "uvicorn main:app --host 0.0.0.0 --port 8000 & streamlit run src/frontend/app.py --server.port 8501"
