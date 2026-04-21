@@ -1,4 +1,4 @@
-# app-gemini 🚀🤖
+# app-dou 🚀🤖
 
 API simples em **FastAPI** que:
 
@@ -157,7 +157,5 @@ Resposta (resumo do que vem):
 ---
 
 ## Licença 📄
-
-Defina a licença que preferir (MIT, Apache-2.0, etc.).  
-Se quiser, eu posso adicionar um arquivo `LICENSE` também.
+ 
 
